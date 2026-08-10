@@ -1,0 +1,25 @@
+---
+const { title } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+
+  </head>
+  <body>
+    <header style="padding: 1em; background: #bc7ef048; text-align: center;">
+      <h1>Proyecto Svelte shipeo Astro</h1>
+    </header>
+
+    <main style="padding: 2em;">
+      <slot /> <!-- Aquí se inserta el contenido -->
+    </main>
+
+    <footer style="padding: 1em; text-align: center; background: #771edd41;">
+      <p>Hecho por Karincillo el pillo</p>
+    </footer>
+  </body>
+</html>

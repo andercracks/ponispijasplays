@@ -1,0 +1,20 @@
+---
+import Mem from "../components/memoria.svelte";
+---
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('/llanosColomb.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Mem client:only="svelte" />
+  </body>
+</html>

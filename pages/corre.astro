@@ -1,0 +1,21 @@
+---
+import Corres from "../components/corre.svelte";
+---
+
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('/llanosColomb.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Corres client:only="svelte" />
+  </body>
+</html>

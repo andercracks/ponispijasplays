@@ -1,0 +1,24 @@
+---
+import AnimanS from "../components/animan.svelte";
+
+import "../styles/juegos.css";
+---
+
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('/fondo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>la finca de la yupision</h1>
+    <AnimanS client:only="svelte" />
+  </body>
+</html>

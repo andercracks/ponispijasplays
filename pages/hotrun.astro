@@ -1,0 +1,20 @@
+---
+import Run from "../components/hotrun.svelte";
+---
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('/fondo.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Run client:only="svelte" />
+  </body>
+</html>
