@@ -2,43 +2,31 @@
 import AnimanS from "../components/animan.svelte";
 
 import "../styles/juegos.css";
+import "../styles/global.css";
 ---
 
-<html>
+<html lang="es">
   <head>
-    <style>
-      body {
-        background-image: url('/fondo.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Finca de la Yupision</title>
   </head>
 
   <body>
     <h1>la finca de la yupision</h1>
 
-       <p>
-        Juegos casuales para jugar directamente desde tu navegador 🎮
-      </p>
+    <p class="descripcion">
+      Juegos casuales para jugar directamente desde tu navegador 🎮
+    </p>
 
     <AnimanS client:only="svelte" />
 
-     <footer>
-
+    <footer>
       <p>© 2026 La Finca de la Yupision</p>
-  
-      <nav>
-  
-        <a href="/about">Sobre este sitio</a> |
-        <a href="/privacy">Política de privacidad</a> |
-        <a href="/contact">Contacto</a>
-  
-      </nav>
-  
-    </footer>
 
+      <a href="/about">Sobre este sitio</a> |
+      <a href="/privacy">Política de privacidad</a> |
+      <a href="/contact">Contacto</a>
+    </footer>
   </body>
 </html>
