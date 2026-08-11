@@ -84,7 +84,4 @@
     <p class="sin-resultados">❌ No se encontraron juegos</p>
   {/if}
 
- /*<a href="/animan" class="btn-volver">
-    ⬅ ir al registro random
-  </a>*/
 </div>
