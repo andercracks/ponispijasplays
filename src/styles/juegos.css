@@ -1,38 +1,72 @@
 .menu-juegos {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
 }
 
 .btn-juego {
   background: linear-gradient(135deg, #7b2ff7, #f107a3);
   color: white;
   text-decoration: none;
-  padding: 18px 26px;
+  padding: 18px;
+  min-height: 150px;
   border-radius: 14px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
+
   box-shadow: 0 8px 25px rgba(123, 47, 247, 0.45);
   transition: all 0.25s ease;
 }
 
 .btn-juego img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .btn-juego span {
   font-weight: 600;
   font-size: 15px;
+  text-align: center;
 }
 
 .btn-juego:hover {
-  transform: translateY(-2px) scale(1.03);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(123, 47, 247, 0.6);
+}
+
+.input-buscar {
+  width: min(320px, 80%);
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: #2d2d2d;
+  color: white;
+  margin: 25px auto 10px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.input-buscar::placeholder {
+  color: #aaa;
+}
+
+.sin-resultados {
+  color: #eee;
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: center;
 }
 
 .btn-volver {
@@ -51,28 +85,6 @@
   opacity: 1;
 }
 
-.input-buscar {
-  width: 260px;
-  padding: 12px 16px;
-  border-radius: 12px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  background: #2d2d2d;
-  color: white;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-.input-buscar::placeholder {
-  color: #aaa;
-}
-
-.sin-resultados {
-  color: #eee;
-  font-size: 14px;
-  opacity: 0.8;
-}
 .pantalla-juego {
   min-height: 100vh;
   display: flex;
@@ -81,5 +93,3 @@
   justify-content: center;
   gap: 20px;
 }
-
-
